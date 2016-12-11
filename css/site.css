@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=latin-ext');
+
+/* Custom CSS
+ * --------------------------------------- */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+  background: #000
+}
+
+/* Demos Menu
+ * --------------------------------------- */
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+#demosMenu {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+}
+.videolar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  /* in case the video doesn't fit the whole page*/
+  background-image: /* our video */
+  ;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: 3;
+}
+video {
+  filter: none;
+  -webkit-filter: grayscale(100%);
+}
+
+/* Layer with position absolute in order to have it over the video
+    * --------------------------------------- */
+
+#section0 .layer {
+  position: absolute;
+  z-index: 4;
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+
+#section0 {
+  overflow: hidden;
+}
+
+/* Bottom menu
+    * --------------------------------------- */
+
+#infoMenu li a {
+  color: #fff;
+}
+
+/* Centered texts in each section
+    * --------------------------------------- */
+
+.section {
+  text-align: center;
+}
+
+/* Backgrounds will cover all the section
+    * --------------------------------------- */
+
+.section {
+  background-size: cover;
+}
+.slide {
+  background-size: cover;
+}
+
+/* Defining each section background and styles
+    * --------------------------------------- */
+
+#section0 {
+  background-image: url(../images/01.jpg);
+}
+#section1 {
+  background-image: url(../images/02.jpg);
+}
+#section2 {
+  background-image: url(../images/03.JPG);
+}
+#section3 {
+  background-image: url(../images/04.jpg);
+}
+#section4 {
+  background-image: url(../images/05.jpg);
+}
+#section5 {
+  background-image: url(../images/06.jpg);
+}
+#section6 {
+  background-image: url(../images/07.jpg);
+}
+#section7 {
+  background-image: url(../images/08.jpg);
+}
+#section8 {
+  background-image: url(../images/09.jpg);
+}
+#section9 {
+  background-image: url(../images/10.jpg);
+}
+#section10 {
+  background-image: url(../images/11.jpg);
+}
+#section11 {
+  background-image: url(../images/12.jpg);
+}
+#section12 {
+  background-image: url(../images/13.jpg);
+}
+#section13 {
+  background-image: url(../images/14.jpg);
+}
+#section14 {
+  background-image: url(../images/15.jpg);
+}
+#section15 {
+  background-image: url(../images/16.jpg);
+}
+#section16 {
+  background-image: url(../images/17.jpg);
+}
+#section17 {
+  background-image: url(../images/18.jpg);
+}
+#section18 {
+  background-image: url(../images/19.jpg);
+}
+
+/*Adding background for the slides
+    * --------------------------------------- */
+
+#slide1 {
+  background-image: url(../imgs/bg2.jpg);
+  padding: 0% 0 0 0;
+}
+#slide2 {
+  background-image: url(../imgs/bg5.jpg);
+  padding: 0% 0 0 0;
+}
+
+/* Bottom menu
+    * --------------------------------------- */
+
+#infoMenu li a {
+  color: #fff;
+}
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.video-container .video-overlay-content {
+  position: absolute;
+  top: 0;
+}
+.intro.showcase-area {
+  text-align: center;
+  height: 75%;
+  background: url('../images/slants/slant1.png') center top no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.showcase-area {
+  text-align: left;
+  padding: 0;
+}
+.showcase-area-inner {
+  max-width: 700px;
+  /* padding: 40px;*/
+  padding: 5%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: 999;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+100 */
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1);
+  /* IE6-9 */
+}
+.showcase-area-inner h5>span {
+  font-size: 96px;
+  line-height: 103px;
+  font-family: "OpenSansLight";
+  font-weight: normal;
+}
+.showcase-area-inner h5>span>strong {
+  font-size: 36px;
+  line-height: 43px;
+  font-family: "OpenSansLight";
+  font-weight: normal;
+}
+.showcase-area-inner h1 {
+  font-size: 46px;
+  line-height: 56px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 10%;
+  font-weight: normal;
+}
+.showcase-area-inner h6 {
+  margin-top: 20px;
+}
+.showcase-area-inner h6>span {
+  text-transform: uppercase;
+  font-family: "RalewayLight";
+  font-size: 12px;
+  line-height: 19px;
+  padding: 10px;
+}
+.showcase-proceed {
+  margin-top: 40px;
+}
+.showcase-proceed>a {
+  opacity: 1;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+.showcase-proceed>a:hover {
+  opacity: 0.5;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+p {
+  line-height: 150% !important;
+  font-size: 18px;
+  line-height: 24px;
+}
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.title {
+  font-size: 18px
+}
+.video-mobile {
+  margin-top: 50%;
+}
+.section-footer .fp-tableCell {
+  display: table-cell;
+}
+.footer-wrapper {
+  background: #1a1e23;
+  padding: 36px 0;
+  color: #fff;
+}
+.aljazeera {
+  height: auto !important;
+}
+.aljazeera .aljazeeraLogo {
+  background: url(../images/logo3.png) no-repeat;
+  width: 98px;
+  height: 145px;
+  margin: 0 auto
+}
+.aljaWrapLogo {
+  width: 200px;
+  margin: 0 auto;
+  height: auto !important;
+  background: #1a1e23
+}
+.lineOrta {
+  background: url(../images/line.jpg) repeat-x;
+  margin-top: 0;
+  height: 30px !important;
+}
+.hazirla {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 2em;
+  padding-bottom: 2em;
+  height: auto !important;
+}
+.bold {
+  font-weight: bold
+}
+.son {
+  padding-top: 5em;
+  color: #8a898a;
+  height: auto !important;
+}
+.son p {
+  font-size: 14px !important;
+  text-align: center !important;
+}
+.social {
+  margin-bottom: 2vh
+}
+.social a {
+  margin-right: 1.5em;
+  text-decoration: none;
+}
+.son .copy {
+  font-size: 12px !important;
+  text-align: center
+}
+.section-bullets {
+  padding: 0px;
+  margin: 0px;
+}
+.menu-item {
+  background: rgba(77, 78, 79, 1);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  padding-top: 6px;
+  color: #fff !important;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+}
+.menu-active {
+  background-color: #B34452;
+}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.navbar-brand {
+  padding: 6px 15px;
+}
+.video-overlay-content {
+  padding-top: 13%;
+}
+.copyright p {
+  font-size: 13px
+}
+
+/* Large desktops and laptops */
+
+@media (min-width: 1200px) {}
+
+/* Landscape tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .video-overlay-content {
+    padding-top: 5%;
+  }
+}
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .showcase-area-inner.video-yazi {
+    position: relative !important;
+    padding: 3%;
+    z-index: -3
+  }
+  .video-overlay-content.video-yazi {
+    margin-top: 30px;
+    height: auto
+  }
+  .video-overlay-content {
+    padding-top: 3%!important;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+  .video-overlay-content {
+    padding-top: 3% !important;
+  }
+  p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .showcase-area-inner.video-yazi {
+    position: relative !important;
+    padding: 3%;
+    z-index: -3
+  }
+  .video-overlay-content.video-yazi {
+    margin-top: 30px;
+    height: auto
+  }
+  .showcase-area-inner h1 {
+    font-size: 37px;
+    line-height: 43px;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+  .video-overlay-content {
+    padding-top: 5% !important;
+  }
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .showcase-area-inner.video-yazi {
+    position: relative !important;
+    padding: 3%;
+    z-index: -3
+  }
+  .video-overlay-content.video-yazi {
+    margin-top: 30px;
+    height: auto
+  }
+  .showcase-area-inner h1 {
+    font-size: 37px;
+    line-height: 43px;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+  #fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 0;
+    -webkit-transform: translate3d(0,0,0);
+    background: #000;
+    height: 100%;
+    right: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 20px;
+    float: left;
+    width: 7%;
+    opacity: 0.7;
+  }
+  #fullpage {
+    width: 93%;
+  }
+}
+.overlay:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  opacity: 0.5;
+}
